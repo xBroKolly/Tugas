@@ -5,12 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
+
+use App\Models\User;
  
 class KirimEmailController extends Controller
 {
-    public function kirim()
+    public function kirim($id_user)
     {
-        $email = 'emailtujuan@hotmail.com';
+        $user_yg_dituju = User::where($id_user)->first();
+
+        $email = $user_yg_dituju->email;
+
         $data = [
             'title' => 'Status Pendaftaran',
             'from' => 'paragoncorp@gmail.com',

@@ -58,6 +58,6 @@ Route::group(['middleware'=>['auth']],function(){
 	Route::get('/user/{id}/delete', [App\Http\Controllers\UserController::class, 'delete']);
 	Route::get('/data-sekolah', [App\Http\Controllers\DatasekolahController::class, 'index']);
 	Route::post('/data-sekolah/edit/{id}/submit', [App\Http\Controllers\DatasekolahController::class, 'edit_submit']);
-	Route::get('/kirim_email', [App\Http\Controllers\KirimEmailController::class, 'kirim']);
+	Route::get('/kirim_email/{id_user}', [App\Http\Controllers\KirimEmailController::class, 'kirim']);
 
 });
