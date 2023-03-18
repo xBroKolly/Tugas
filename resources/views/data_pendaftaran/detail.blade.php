@@ -12,7 +12,16 @@ Detail Pendaftaran Beauty Advisor
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h4>Detail Pendaftaran Beauty Advisor</h4>
   </div>
-  <a href="/data-pendaftaran" class="btn btn-info"><i class="fa fa-arrow-left"></i> Kembali</a>
+  <a href="/data-pendaftaran" class="btn btn-info mb-5"><i class="fa fa-arrow-left"></i> Kembali</a>
+
+  {{-- Tampilkan Pesan dari Session --}}
+  @if (session('pesan'))
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Pesan!</strong> {{ session('pesan') }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  @endif
+
 <br><br>
   <div class="alert alert-info">
     <h3 align="center">Verifikasi</h3>
@@ -30,6 +39,8 @@ Detail Pendaftaran Beauty Advisor
       </div>
       <button type="submit" class="btn btn-success"> Simpan</button>
     </form>
+
+    <a href="{{ route('kirim.email.notifikasi', $pendaftaran->no_pendaftaran) }}" class="btn btn-warning">Kirim Notifikasi</a>
   </div>
   <h3 align="center">FORMULIR PENERIMAAN BEAUTY ADVISOR <br>
 PARAGON DC JAMBI
