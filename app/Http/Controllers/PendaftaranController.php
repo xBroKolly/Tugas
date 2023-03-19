@@ -124,6 +124,7 @@ class PendaftaranController extends Controller
         
         $this->validate($request,[
             'nama_lengkap'=>'required',
+            'email'=>'required',
             'jenis_kelamin'=>'required',
             'tempat_lahir'=>'required',
             'tgl_lahir'=>'required',
@@ -159,6 +160,7 @@ class PendaftaranController extends Controller
         $siswa->no_pendaftaran          = $format;
         $siswa->user_id    				= $user_id;
         $siswa->nama_lengkap    		= $request->nama_lengkap;
+        $siswa->email                   = $request->email;
         $siswa->jenis_kelamin           = $request->jenis_kelamin;
         $siswa->tempat_lahir    		= $request->tempat_lahir;
         $siswa->tgl_lahir           	= $tgl_lahir;
@@ -228,6 +230,7 @@ class PendaftaranController extends Controller
     public function data_pendaftaran_edit_submit(Request $request, $no_daftar){
         $this->validate($request,[
             'nama_lengkap'=>'required',
+            'email'=>'required',
             'jenis_kelamin'=>'required',
             'tempat_lahir'=>'required',
             'tgl_lahir'=>'required',
@@ -241,6 +244,7 @@ class PendaftaranController extends Controller
 
         $siswa = Pendaftaran_siswa::where('no_pendaftaran',$no_daftar)->first();
         $siswa->nama_lengkap            = $request->nama_lengkap;
+        $siswa->email                   = $request->email;
         $siswa->jenis_kelamin           = $request->jenis_kelamin;
         $siswa->tempat_lahir            = $request->tempat_lahir;
         $siswa->tgl_lahir               = $request->tgl_lahir;

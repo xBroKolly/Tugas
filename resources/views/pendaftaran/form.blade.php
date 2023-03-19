@@ -34,7 +34,12 @@ PARAGON TECHNOLOGY AND INOVATION DC JAMBI
       <td><input type="text" name="nama_lengkap" class="form-control" value="{{old('nama_lengkap')}}" placeholder=""></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;2. Jenis Kelamin</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Email</td>
+      <td width="5%" align="center" valign="middle">:</td>
+      <td><input type="text" name="email" value="{{old('email')}}" class="form-control" placeholder=""></td>
+    </tr>
+    <tr>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;3. Jenis Kelamin</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>
         <select name="jenis_kelamin" class="form-control">
@@ -45,12 +50,12 @@ PARAGON TECHNOLOGY AND INOVATION DC JAMBI
       </td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;3. Tempat Lahir</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;4. Tempat Lahir</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><input type="text" name="tempat_lahir" class="form-control" value="{{old('tempat_lahir')}}" placeholder=""></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;4. Tanggal Lahir</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;5. Tanggal Lahir</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>
         <div class="row">
@@ -92,22 +97,22 @@ PARAGON TECHNOLOGY AND INOVATION DC JAMBI
         </div>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;5. Anak Ke-</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;6. Anak Ke-</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><input type="number" name="anak_ke" class="form-control" value="{{old('anak_ke')}}" placeholder=""></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;6. Jumlah Saudara</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;7. Jumlah Saudara</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><input type="number" name="jml_saudara" class="form-control" value="{{old('jml_saudara')}}" placeholder=""></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;7. Alamat Tempat Tinggal</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;8. Alamat Tempat Tinggal</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><input type="text" name="alamat" class="form-control" value="{{old('alamat')}}" placeholder=""></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;8. Posisi</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;9. Posisi</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><select class="form-control" name="jurusan" id=jurusan">
                   <option value="">[Pilih Posisi]</option>
@@ -118,7 +123,7 @@ PARAGON TECHNOLOGY AND INOVATION DC JAMBI
               </select></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;9. Penempatan</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;10. Penempatan</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><select class="form-control" name="tempat_tinggal" id=tempat_tinggal">
                   <option value="">[Pilih]</option>
@@ -127,7 +132,7 @@ PARAGON TECHNOLOGY AND INOVATION DC JAMBI
               </select></td>
     </tr>
     <tr>
-      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;10. Pendidikan Terakhir</td>
+      <td width="30%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;11. Pendidikan Terakhir</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td><input type="text" name="sekolah_sebelumnya" class="form-control" value="{{old('sekolah_sebelumnya')}}" placeholder=""></td>
     </tr>

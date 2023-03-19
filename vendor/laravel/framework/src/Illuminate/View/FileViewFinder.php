@@ -118,7 +118,7 @@ class FileViewFinder implements ViewFinderInterface
     /**
      * Find the given view in the list of paths.
      *
-     * @param  string  $name
+     * @param  string  $emai
      * @param  array  $paths
      * @return string
      *

@@ -14,50 +14,57 @@ PARAGON TECHNOLOGY AND INOVATION DC JAMBI
       <td>{{$pendaftaran->nama_lengkap}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;2. Jenis Kelamin</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;2. Email</td>
+      <td width="5%" align="center" valign="middle">:</td>
+      <td>
+        {{$pendaftaran->email}}
+      </td>
+    </tr>
+    <tr>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;3. Jenis Kelamin</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>
         {{$pendaftaran->jenis_kelamin}}
       </td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;3. Tempat Lahir</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;4. Tempat Lahir</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->tempat_lahir}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;4. Tanggal Lahir <i>(tahun-bulan-tanggal)</i></td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;5. Tanggal Lahir <i>(tahun-bulan-tanggal)</i></td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->tgl_lahir}}</td>
         
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;5. Anak Ke-</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;6. Anak Ke-</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->anak_ke}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;6. Jumlah Saudara</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;7. Jumlah Saudara</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->jml_saudara}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;7. Alamat Tempat Tinggal</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;8. Alamat Tempat Tinggal</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->alamat}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;8. Posisi</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;9. Posisi</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->jurusan}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;9. Penempatan</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;10. Penempatan</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->tempat_tinggal}}</td>
     </tr>
     <tr>
-      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;10. Pendidikan Terakhir</td>
+      <td width="40%" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;11. Pendidikan Terakhir</td>
       <td width="5%" align="center" valign="middle">:</td>
       <td>{{$pendaftaran->sekolah_sebelumnya}}</td>
     </tr>

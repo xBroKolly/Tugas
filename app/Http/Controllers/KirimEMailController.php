@@ -31,8 +31,6 @@ class KirimEmailController extends Controller
             'from' => 'paragoncorp@gmail.com',
 			'body'	=> 'Selamat </user> kamu telah diterima di Paragon Technology and Inovation DC Jambi'
         ];
-        Mail::to($email)->send(new SendMail($data));
-        
         return back()->with('pesan', 'Berhasil Kirim e-Mail !');
     }
 }
